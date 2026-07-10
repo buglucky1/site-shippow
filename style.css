@@ -390,3 +390,141 @@ a{
    }
 
   /* Formulário B2B */ 
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 8px;
+  }
+
+  form input {
+    font-family: var(--fonte);
+    font-size: 0.85rem;
+    font-weight: 400;
+    padding: 14px 18px;
+    border-radius: 8px;
+    border: none;
+    background: rgba(255, 255, 255, 0.15);
+    color: var(--branco);
+    outline: none;
+    transition: background 0.2s;
+  }
+
+  form input:focus {
+    background: rgba(255, 255, 255, 0.25);
+  }
+
+  .btn-enviar {
+    font-family: var(--fonte);
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    padding: 16px;
+    border-radius: 8px;
+    border: none;
+    background: var(--amarelo);
+    color: var(--escuro);
+    cursor: pointer;
+    margin-top: 8px;
+    transition: background 0.2s, transform 0.2s;
+  }
+
+  .btn-enviar:hover{
+    background: var(--amrelo-escuro);
+    transform: translateY(-2px);
+  }
+
+  /* =====================
+   FOOTER
+   ===================== */
+
+   footer{
+    background: var(--cinza-claro);
+    padding: 48px 80px;
+    color: var(--escuro);
+   }
+
+.footer-shippow-esquerda {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    max-width: 600px;
+}
+
+.footer-logo img {
+    width: 140px;
+}
+
+.footer-links{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.footer-links{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.footer-links a {
+    opacity: 0.7;
+    transition: opacity 0.2s;
+}
+
+.footer-links a:hover {
+ opacity: 1;
+}
+
+.footer-links img {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+}
+
+.foter-local p, footer-direitos p {
+font-size: 0.75rem;
+font-weight: 400;
+color: rgba(255, 255, 255, 0.5);
+line-height: 1.7;
+}
+
+.footer-direitos {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+/* =====================
+   RESPONSIVO
+   ===================== */
+
+@media (max-width: 768px) {
+
+    .roll-section .content{
+        margin: 24px;
+        padding: 32px 24px;
+    }
+
+    .carrossel-ativo, .carrossel-inativo {
+        flex-direction: column;
+    }
+
+    .batata-destaque{
+        width: 100%;
+    }
+
+    .b2c-b2b {
+        grid-template-columns: 1fr;
+    }
+
+    .lado-b2b-escuro .lado-b2c-amarelo {
+        padding: 48px 24px;
+    }
+
+    footer {
+        padding: 48px 24px;
+    }
+}
