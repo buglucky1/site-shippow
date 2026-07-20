@@ -77,16 +77,6 @@ a{
    HERO
    ===================== */
 
-.hero{
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    min-height: 600px;
-    overflow: hidden;
-    display: flex;
-    align-items:center;
-    justify-content: center;
-}
 
 .navbar{
     position: fixed;
@@ -130,6 +120,18 @@ a{
     display: block;
 }
 
+.hero{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    min-height: 600px;
+    overflow: hidden;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+
+
 .hero-video{
  position: absolute;
  top: 50%;
@@ -167,7 +169,7 @@ a{
     font-weight: 500;
     color: var(--branco);
     margin-bottom: 32px;
-    text-shadow: 0 1px 10px rgba (0,0,0,0.5);
+    text-shadow: 0 1px 10px rgba(0,0,0,0.5);
 }
 
 .cta-button{
@@ -186,7 +188,7 @@ a{
 
 .cta-button:hover{
     background: #aa1a00;
-    transform: translateY(-2px)
+    transform: translateY(-2px);
 }
 
 /* =====================
