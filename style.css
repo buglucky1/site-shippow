@@ -88,6 +88,33 @@ a{
     justify-content: center;
 }
 
+.navbar{
+    position: fixed;
+    top: 48px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto;
+    z-index: 1000;
+
+    background-color: #f1f1f1;
+    backdrop-filter: (255, 255, 255, 0.85);
+    border-radius: 32px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 12px 30px;
+}
+
+.nav-logo-shippow{
+    width: 120px;
+    height: auto;
+    display: block;
+}
+
+.navbar-social{
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
 .hero-video{
  position: absolute;
  top: 50%;
