@@ -478,7 +478,7 @@ a{
 
 .btn-seguir:hover{
     background: #aa1a00;
-    transform: translate(-2px);
+    transform: translateY(-2px);
 }
 
 /* =====================
