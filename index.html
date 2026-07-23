@@ -175,23 +175,35 @@
     <div class="lado-b2c-amarelo">
         <h3 class="texto-branco">BATEU A FOME?</h3>
         <p>Descubra o ponto de venda mais perto de você e garanta o seu pacote.</p>
-        <div class="mapa-container"> </div>
+        
+        <div class="select-cidade-wrapper">
+            <select class="select-cidade">
+                <opition value="" disabled selecte>Escolha a sua cidade</opition>
+                <option value="riberao-preto">Ribeirão Preto</option>
+        </div>
+
+        <div class="mapa-container">
+            <img src="./imgs/" alt="Mapa de pontos de venda">
+        </div>
+
     </div>
 
     <div class="lado-b2b-escuro">
         <h3 class="texto-branco">LEVE A SHIPPOW PARA A SUA PRATELEIRA!</h3>
         <p>Ofereça um produto de alto giro, qualidade artesanal e preço competitivo no seu comércio. Seja um parceiro de sucesso do Grupo Aranda.</p>
+        
         <form>
-            <input type="text" placeholder="Digite seu nome completo">
-            <input type="text" placeholder="Digite o nome do seu estabelecimento">
-            <input type="text" placeholder="Digite seu CNPJ">
-            <input type="text" placeholder="Digite sua cidade">
-            <input type="number" placeholder="Digite seu telefone">
-            <input type="number" placeholder="Digite seu WhatsApp">
+            <input type="text" placeholder="Nome completo">
+            <input type="text" placeholder="Nome do estabelecimento">
+            <input type="text" placeholder="CNPJ">
+            <input type="text" placeholder="Cidade">
+            <input type="number" placeholder="Telefone">
+            <input type="number" placeholder="WhatsApp">
             <button class="btn-enviar">QUERO REVENDER</button>
         </form>
     </div>
 </section>
+
 <footer>
     <div class="footer-shippow-esquerda">
         <div class="footer-logo">
