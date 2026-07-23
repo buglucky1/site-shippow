@@ -530,19 +530,56 @@ a{
    .b2c-b2b{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    width: 100%;
    }
 
    .lado-b2c-amarelo {
-    background: var(--amarelo);
-    padding: 80px 48px;
+    background: #f39c12;
+    padding: 60px 48px;
     display: flex;
     flex-direction: column;
     gap: 16px;
    }
 
+   .select-cidade-wrapper{
+    position: relative;
+    width: 100%;
+   }
+
+   .select-cidade {
+    width: 100%;
+    font-family: var(--fonte);
+    font-size: 0.9rem;
+    padding: 14px 18px;
+    border-radius: 8px;
+    border: none;
+    background: #fff;
+    color: #333;
+    outline: none;
+    appearance: none;
+    cursor: pointer;
+   }
+
+   .mapa-container{
+    width: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #e0e0e0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+   }
+
+   .mapa-container img{
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+   }
+
+   /*lado verde*/
+
    .lado-b2b-escuro {
-    background: var(--verde);
-    padding: 80px 48px;
+    background: #27853e;
+    padding: 60px 48px;
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -560,16 +597,8 @@ a{
     font-size: 0.95rem;
     font-weight: 400;
     color: var(--branco);
-    line-height: 1.7;
-    opacity: 0.9;
-   }
-
-   .mapa-container{
-    width: 100%;
-    font-weight: 400;
-    color: var(--branco);
-    line-height: 1.7;
-    opacity: 0.9;
+    line-height: 1.6;
+    opacity: 0.95;
    }
 
   /* Formulário B2B */ 
@@ -578,7 +607,13 @@ a{
     display: flex;
     flex-direction: column;
     gap: 12px;
-    margin-top: 8px;
+    margin-top: 4px;
+  }
+
+  .form-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
   }
 
   form input {
@@ -588,35 +623,42 @@ a{
     padding: 14px 18px;
     border-radius: 8px;
     border: none;
-    background: rgba(255, 255, 255, 0.15);
-    color: var(--branco);
+    background: #f2f2f2;
+    color: #333;
     outline: none;
     transition: background 0.2s;
   }
 
   form input:focus {
-    background: rgba(255, 255, 255, 0.25);
+    background: #fff;
   }
 
   .btn-enviar {
     font-family: var(--fonte);
-    font-size: 0.85rem;
+    font-size: 0.9rem;
     font-weight: 700;
-    letter-spacing: 0.1rem;
+    letter-spacing: 0.05rem;
     padding: 16px;
     border-radius: 8px;
     border: none;
-    background: var(--amarelo);
-    color: var(--escuro);
+    background: #f39c12;
+    color: #fff;
     cursor: pointer;
-    margin-top: 8px;
+    margin-top: 4px;
     transition: background 0.2s, transform 0.2s;
+    text-transform: uppercase;
   }
 
   .btn-enviar:hover{
-    background: var(--amrelo-escuro);
+    background: #d68910;
     transform: translateY(-2px);
   }
+
+@media (max-width: 900px){
+    .b2c-b2b{
+        grid-template-columns: 1fr;
+    }
+}
 
   /* =====================
    FOOTER
