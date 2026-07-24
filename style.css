@@ -674,7 +674,8 @@ a{
    .footer-container{
     max-width: 1200px;
     margin: 0 auto;
-    grid-template-columns: auto 1fr 1fr;
+    display: grid;
+    grid-template-columns: auto 1fr 1fr 1fr;
     gap: 40px;
     align-items: start;
    }
