@@ -665,68 +665,68 @@ a{
    FOOTER
    ===================== */
 
-   footer{
+footer {
     background: #f1f1f1;
     padding: 48px 80px;
     color: var(--escuro, #222);
-   }
+}
 
-   .footer-container{
+.footer-container {
     max-width: 1200px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: auto 1fr 1fr;
+    grid-template-columns: auto 1fr 1fr; /* Exatamente 3 colunas */
     gap: 40px;
     align-items: start;
-   }
+}
 
-   .footer-col-logo{
+.footer-col-logo {
     display: flex;
     flex-direction: column;
     gap: 20px;
-   }
+}
 
-   .footer-logo img{
+.footer-logo img {
     width: 130px;
     display: block;
-   }
+}
 
-   .footer-links {
+.footer-links {
     display: flex;
     gap: 12px;
     align-items: center;
-   }
+}
 
-   .footer-links a img{
+.footer-links a img {
     width: 26px;
     height: 26px;
     object-fit: contain;
     transition: transform 0.2s;
-   }
+}
 
-   .footer-container a img:hover{
+.footer-links a img:hover {
     transform: scale(1.1);
-   }
+}
 
-   .footer-col p{
+.footer-col p {
     font-size: 0.8rem;
     font-weight: 400;
     color: #555;
     line-height: 1.6;
-   }
+}
 
-   .footer-col-direitos {
+.footer-col-direitos {
     display: flex;
     flex-direction: column;
     gap: 4px;
-   }
+}
 
-   @media(max-width:768px){
-    .footer-container{
+@media(max-width: 768px) {
+    .footer-container {
         grid-template-columns: 1fr;
         gap: 30px;
     }
-   }
+}
 /* =====================
    RESPONSIVO
    ===================== */
