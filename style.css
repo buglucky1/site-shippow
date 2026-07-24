@@ -666,63 +666,67 @@ a{
    ===================== */
 
    footer{
-    background: var(--cinza-claro);
+    background: #f1f1f1;
     padding: 48px 80px;
-    color: var(--escuro);
+    color: var(--escuro, #222);
    }
 
-.footer-shippow-esquerda {
+   .footer-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    grid-template-columns: auto 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+   }
+
+   .footer-col-logo{
     display: flex;
     flex-direction: column;
-    gap: 24px;
-    max-width: 600px;
-}
+    gap: 20px;
+   }
 
-.footer-logo img {
-    width: 140px;
-}
+   .footer-logo img{
+    width: 130px;
+    display: block;
+   }
 
-.footer-links{
-    display: flex;
-    gap: 16px;
-    align-items: center;
-}
-
-.footer-links{
-    display: flex;
-    gap: 16px;
-    align-items: center;
-}
-
-.footer-links a {
-    opacity: 0.7;
-    transition: opacity 0.2s;
-}
-
-.footer-links a:hover {
- opacity: 1;
-}
-
-.footer-links img {
-    width: 28px;
-    height: 28px;
+   .footer-links {
+    width: 26px;
+    height: 26px;
     object-fit: contain;
-    filter: brightness(0) invert(1);
-}
+    transition: transform 0.2s;
+   }
 
-.footer-local p, footer-direitos p {
-font-size: 0.75rem;
-font-weight: 400;
-color: rgba(255, 255, 255, 0.5);
-line-height: 1.7;
-}
+   .footer-links a img{
+    width: 26px;
+    height: 26px;
+    object-fit: contain;
+    transition: transform 0.2s;
+   }
 
-.footer-direitos {
+   .footer-container a img:hover{
+    transform: scale(1.1);
+   }
+
+   .footer-col p{
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: #555;
+    line-height: 1.6;
+   }
+
+   .footer-col-direitos {
     display: flex;
     flex-direction: column;
     gap: 4px;
-}
+   }
 
+   @media(max-width:768px){
+    .footer-container{
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+   }
 /* =====================
    RESPONSIVO
    ===================== */
