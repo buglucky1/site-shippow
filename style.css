@@ -675,7 +675,7 @@ a{
     max-width: 1200px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: auto 1fr 1fr 1fr;
+    grid-template-columns: auto 1fr 1fr;
     gap: 40px;
     align-items: start;
    }
@@ -692,10 +692,9 @@ a{
    }
 
    .footer-links {
-    width: 26px;
-    height: 26px;
-    object-fit: contain;
-    transition: transform 0.2s;
+    display: flex;
+    gap: 12px;
+    align-items: center;
    }
 
    .footer-links a img{
